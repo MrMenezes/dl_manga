@@ -51,10 +51,3 @@ def load_chapters(manga, download_path=None):
             total = int(chapter['number'])
         percent = (total - int(chapter['number']) + 1 ) / total * 100
         print_progress(percent)
-
-
-# manga = list_chapters(site)
-# load_chapters(manga)
-manga = {'name': 'Adonis Next Door'}
-from zip import zip
-zip(f'downloads/{manga["name"]}', manga["name"])
